@@ -1,0 +1,57 @@
+/* FeedbackForm.css */
+.feedback-form-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-form-container h1 {
+  color: gold;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.feedback-form-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.rating-container label {
+  margin: 0;
+  cursor: pointer;
+}
+
+.star {
+  margin-right: 5px;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.star:hover {
+  color: #FFD700;
+}
+
+.glow-button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Add a hover effect */
+.glow-button:hover {
+  background-color: #fff;
+  color: #000; /* Change text color when hovering */
+  box-shadow: 0 0 10px rgba(234, 239, 242, 0.5); /* Add a white glow on hover */
+}

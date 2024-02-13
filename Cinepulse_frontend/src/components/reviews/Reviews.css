@@ -1,0 +1,39 @@
+/* Custom styles for the Reviews heading */
+.reviews-heading {
+    margin-top: 50px;
+    margin-left: 120px;
+    color: #beccdd; /* Change the color to your desired color */
+    animation: glowing 1s infinite; /* Add shake animation */
+}
+
+@keyframes glowing {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.movie-poster {
+    height: 500px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 1px solid gold;
+    border-radius: 25px;
+    overflow: hidden;
+    float: left; /* Float the image to the left side */
+    margin-left: 5px; /* Add some spacing between the image and content */
+ /* Ensure the image doesn't exceed its container's width */
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Hover effect for the image */
+.movie-poster:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}

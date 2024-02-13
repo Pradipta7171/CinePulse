@@ -1,0 +1,48 @@
+.navbar-transparent {
+  background-color: rgba(42, 40, 40, 0.513); /* Add slight transparency (adjust the alpha value as needed) */
+  transition: background-color 0.3s ease; /* Add a transition for smooth color change */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the Navbar */
+}
+
+/* Glowing effect for the Navbar on hover */
+.navbar-transparent:hover {
+  background-color: rgba(0, 0, 0, 1); /* Change to fully opaque color on hover */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4); /* Add a glowing box-shadow on hover */
+}
+
+/* Glowing effect for the Navbar brand */
+.glowing-brand {
+  color: gold; /* Set the initial color */
+  animation: glow 2s infinite alternate; /* Add an automatic glow animation */
+}
+
+/* Keyframes for the automatic glow animation */
+@keyframes glow {
+  0% {
+      color: gold; /* Start with the initial color */
+      text-shadow: none; /* No text shadow */
+  }
+  100% {
+      color: #FFD700; /* Change to a glowing color */
+      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700; /* Add a glowing text shadow */
+  }
+}
+
+
+.glowing-brand {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+  color: gold !important;
+  margin-right: 20px;
+  text-decoration: none !important;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: white !important;
+}

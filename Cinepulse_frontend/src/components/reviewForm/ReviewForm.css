@@ -1,0 +1,29 @@
+/* Custom styles for the Submit button */
+.submit-button {
+    transition: background-color 0.3s ease; /* Add a transition for the hover effect */
+}
+
+/* Hover effect for the Submit button */
+.submit-button:hover {
+    background-color: #17a2b8; /* Change the background color on hover */
+    color: rgb(255, 255, 255); /* Change the text color on hover */
+    transform: scale(1.1); /* Enlarge the button on hover */
+}
+
+/* Animation for showing reviews */
+.show-reviews {
+    animation: slide-down 0.5s ease forwards; /* Add a slide-down animation */
+    display: none; /* Initially hide the reviews */
+}
+
+/* Keyframes for the slide-down animation */
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Start from above */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Slide down to its original position */
+    }
+}

@@ -1,0 +1,54 @@
+
+.glowing-text {
+    animation: glow 1s infinite alternate;
+  }
+  
+  /* Define the keyframes for the glowing animation */
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7), 0 0 20px #FFD700;
+    }
+    100% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7), 0 0 20px #FFD700;
+    }
+}
+
+.watchlist-contain {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .movielist-contain {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create a responsive grid with card-sized columns */
+    gap: 20px; /* Add some spacing between cards */
+  }
+  
+  .moviecard-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s; /* Add a smooth hover transition */
+  }
+  
+  .moviecard-container:hover {
+    transform: scale(1.05); /* Enlarge the card on hover */
+  }
+  
+  .moviecard-container img {
+    border-radius: 20px;
+    max-width: 70%;
+    height: auto;
+  }
+  
+  .moviecard-container h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  /* Customize the styles further as needed */
+  
+
+  
